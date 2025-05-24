@@ -13,7 +13,7 @@ html {
 /*?------------------------body-----------------------*/
 body {
   background-color: rgb(187, 187, 187);
-  font-family: "Tagesschrift", system-ui !important ;
+  font-family: "Tagesschrift", system-ui !important;
 }
 /*?-----------------------header-----------------------*/
 header {
@@ -103,7 +103,6 @@ nav ul li a:hover{
   background-color: rgba(0, 0, 0, 0.374);
   padding: 0.2rem;
   margin: 0;
-
 }
 
 .hero p {
@@ -123,7 +122,6 @@ nav ul li a:hover{
   background-color: rgb(0, 0, 0);
   border-radius: 10px;
   padding: 0px 8px 0px 8px;
-  
 }
 
 
@@ -160,7 +158,6 @@ nav ul li a:hover{
 .grid-item {
   align-items: center;
   justify-content: center;
-  /* display: flex; */
   flex-direction: column;
 }
 
@@ -185,11 +182,9 @@ nav ul li a:hover{
 
 /**----Cuarta Seccion----*/
 
-/* .carousel {
- 
-} */
 
 /**----Quinta Seccion----*/
+
 .productos .card-contenedor {
   background-color: rgb(77, 75, 75);
   display: flex;
@@ -197,12 +192,14 @@ nav ul li a:hover{
 }
 
 .productos h2 {
-  color: rgb(53, 209, 160);
+  color: white;
   display: flex;
   justify-content: center;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(77, 75, 75);
   margin: 0;
   text-align: center;
+  padding: 5px;
+  text-decoration: underline;
 }
 
 .card-contenedor div {
@@ -214,10 +211,12 @@ nav ul li a:hover{
   margin: 10px;
   text-align: center;
 }
+
 .card-contenedor img {
   width: 100%;
   height: 150px;
 }
+
 .card-contenedor h3 {
   color: rgb(255, 255, 255);
   text-align: center;
@@ -229,7 +228,6 @@ nav ul li a:hover{
   color: rgb(53, 209, 160);
   text-align: center;
 }
-/*?----------------------aside----------------------*/
 
 /*?----------------------footer----------------------*/
 
@@ -250,10 +248,9 @@ footer a img {
 
 .nosotros {
   display: flex;
-  background-image: url(../img/page-nosotros/fondo\ Nosotros.jpg);
+  background-image: url(../img/page-nosotros/pngtree-vintage-black-brick-wall-a-background-perfect-for-3d-rendering-and-picture-image_5575471.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   min-height: calc(100vh - 100px);
   justify-content: space-evenly;
   flex-direction: column;
@@ -273,7 +270,7 @@ footer a img {
 .nosotros-img img {
   margin: 3px;
 }
- 
+
 /*?----------------------Pagina Productos------------------*/
 
 .parrafo-productos-page {
@@ -287,7 +284,5 @@ footer a img {
 }
 
 .carousel-item h5, p {
-
   color: black;
-
 }
