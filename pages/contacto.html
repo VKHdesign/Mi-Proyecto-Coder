@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
+
 <body>
     <header>
         <div class="header-logo">
             <img class="logo-img" src="../img/249df4a6d118078006405a21e161e617.png" alt="logo de empresa">
-            <div class="logo">Vikhing Design</div> 
+            <div class="logo">Vikhing Design</div>
         </div>
         <nav>
             <ul>
@@ -24,7 +26,32 @@
     </header>
 
     <main>
+        <section class="contacto">
+            <div class="container">
+                <h2>Contáctanos</h2>
 
+                <!-- Formulario de contacto -->
+                <form action="mailto:correo@example.com" method="POST" enctype="text/plain">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+
+                <!-- Información de contacto -->
+                <div class="contact-info">
+                    <p>📞 Teléfono: <a href="tel:+123456789">+1 234 567 89</a></p>
+                    <p>📸 Instagram: <a href="https://instagram.com/" target="_blank">@tuusuario</a></p>
+                    <p>📘 Facebook: <a href="https://facebook.com/" target="_blank">/tuusuario</a></p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -33,6 +60,7 @@
         <a href="https://www.facebook.com/" target="_blank"><img src="../img/logo facebook.png" alt=""></a>
         <a href="https://www.youtube.com/" target="_blank"><img src="../img/logo you tube.png" alt=""></a>
     </footer>
-    
+
 </body>
+
 </html>
