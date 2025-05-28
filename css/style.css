@@ -6,15 +6,12 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 /*?------------------------body-----------------------*/
 body {
   background-color: rgb(187, 187, 187);
   font-family: "Tagesschrift", system-ui !important;
 }
+
 /*?-----------------------header-----------------------*/
 header {
   background-color: black;
@@ -43,7 +40,7 @@ header {
   text-align: left;
 }
 
-.logo::first-letter{
+.logo::first-letter {
   color: rgb(130, 43, 43);
 }
 
@@ -63,20 +60,22 @@ nav ul li a {
   color: rgb(130, 43, 43);
 }
 
-nav ul li a:hover{
-    color: rgb(53, 209, 160);
-    transition: 0.8s;
+nav ul li a:hover {
+  color: rgb(53, 209, 160);
+  transition: 0.8s;
 }
 
 /*?-----------------------main----------------------*/
-/**----Primera Seccion-----*/
+
+/**----Primer Sección-----*/
 
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 60px); /* total - nav */
+  min-height: calc(100vh - 60px);
+  /* total - nav */
   position: relative;
 }
 
@@ -90,7 +89,8 @@ nav ul li a:hover{
 
 .hero video {
   position: absolute;
-  inset: 0; /* top, right, bottom, left */
+  inset: 0;
+  /* top, right, bottom, left */
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -125,25 +125,32 @@ nav ul li a:hover{
 }
 
 
-/**----Segunda Seccion----*/
+/**----Segunda Sección----*/
 
 .historia {
   height: 40vh;
   background-color: rgb(21, 15, 15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .historia h2 {
   color: whitesmoke;
   text-align: center;
   text-decoration: underline;
+  margin: 0;
+  /* padding-bottom: 10px; */
 }
 
 .historia p {
   color: whitesmoke;
   text-align: center;
+  font-size: 15px;
+  margin: 0;
 }
 
-/**----Tercera Seccion grid----*/
+/**----Tercera Sección grid----*/
 
 .grid-section {
   background-color: rgb(77, 75, 75);
@@ -164,12 +171,15 @@ nav ul li a:hover{
 .img-2 {
   grid-column: span 2;
 }
+
 .img-4 {
   grid-row: span 2;
 }
+
 .img-5 {
   grid-column: span 2;
 }
+
 .img-6 {
   grid-row: span 2;
 }
@@ -224,6 +234,7 @@ nav ul li a:hover{
   font-size: 20px;
   margin: 0;
 }
+
 .card-contenedor a {
   color: rgb(53, 209, 160);
   text-align: center;
@@ -283,6 +294,104 @@ footer a img {
   padding: 5px;
 }
 
-.carousel-item h5, p {
+.carousel-item h5,
+p {
   color: black;
+}
+
+/*!----------------------Media Qwery------------------*/
+
+
+@media screen and (max-width:990px) {
+  .hero p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:877px) {
+  .historia p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width:752px) {
+  header {
+    flex-direction: column;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width:735px) {
+  .card-contenedor h3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:635px) {
+  .historia {
+    height: 53vh;
+  }
+
+  header {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width:558px) {
+  .hero h1 {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .productos .card-contenedor {
+    flex-wrap: wrap;
+  }
+
+  .historia {
+    height: 58vh;
+  }
+}
+
+@media screen and (max-width:500px) {
+  header {
+    justify-content: flex-start;
+  }
+
+  .header-logo {
+    flex-direction: row-reverse;
+  }
+
+  .carousel-item img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width:474px) {
+  .historia {
+    height: 66vh;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .historia {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width:403px) {
+  nav ul li a {
+    font-size: 13px;
+  }
+  .logo {
+    font-size: 35px;
+  }
+  .hero-content p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width:364px) {
+  .historia {
+    height: 74vh;
+  }
 }
