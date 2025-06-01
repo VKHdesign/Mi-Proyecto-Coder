@@ -276,7 +276,7 @@ footer a img {
   justify-content: space-evenly;
 }
 
-.nosotros-img img {
+.nosotros-img {
   margin: 3px;
 }
 
@@ -301,6 +301,7 @@ p {
 body {
   background-color: #717070;
 }
+
 .container {
   max-width: 700px;
   margin: 20px auto;
@@ -375,6 +376,11 @@ button:hover {
 
 /*!----------------------Media Qwery------------------*/
 
+@media screen and (max-width:1120px) {
+  .nosotros-img {
+    flex-wrap: wrap;
+  }
+}
 
 @media screen and (max-width:990px) {
   .hero p {
@@ -423,6 +429,13 @@ button:hover {
 
   .historia {
     height: 58vh;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .nosotros-img .img-two {
+    width: 300px;
+    height: 100px;
   }
 }
 
