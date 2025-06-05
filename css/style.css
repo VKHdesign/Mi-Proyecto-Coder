@@ -20,6 +20,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.3rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .header-logo {
@@ -188,7 +191,14 @@ nav ul li a:hover {
 
 
 /**----Cuarta Seccion----*/
-
+.carousel-indexpage {
+  z-index: 0;
+}
+.carousel-indexpage .carousel-fade .carousel-control-prev,.carousel-control-next {
+  margin: 0;
+  background-color: transparent;
+  filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
+}
 
 /**----Quinta Seccion----*/
 
@@ -291,6 +301,18 @@ footer a img {
 
 .carousel-item h5,p {
   color: black;
+}
+
+.productos .carousel-control-prev {
+  margin: 0;
+  background-color: transparent;
+  filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
+}
+
+.carousel .carousel-control-next {
+  margin: 0;
+  background-color: transparent;
+  filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
 }
 
 /*?----------------------Pagina Contacto------------------*/
