@@ -44,7 +44,7 @@ header {
 }
 
 .logo::first-letter {
-  color: rgb(130, 43, 43);
+  color: rgb(77, 75, 75);
 }
 
 nav ul {
@@ -64,8 +64,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: rgb(53, 209, 160);
-  transition: 0.8s;
+  color: rgb(77, 75, 75);
+  transition: 0.6s;
 }
 
 /*?-----------------------main----------------------*/
@@ -77,7 +77,8 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 60px);/* total - nav */
+  min-height: calc(100vh - 60px);
+  /* total - nav */
   position: relative;
 }
 
@@ -118,9 +119,9 @@ nav ul li a:hover {
 }
 
 .hero .hero-content a:hover {
-  color: rgb(53, 209, 160);
-  transition: 0.8s;
-  background-color: rgb(0, 0, 0);
+  color: black;
+  transition: 0.6s;
+  background-color: rgb(130, 43, 43);
   border-radius: 10px;
   padding: 0px 8px 0px 8px;
 }
@@ -194,7 +195,9 @@ nav ul li a:hover {
 .carousel-indexpage {
   z-index: 0;
 }
-.carousel-indexpage .carousel-fade .carousel-control-prev,.carousel-control-next {
+
+.carousel-indexpage .carousel-fade .carousel-control-prev,
+.carousel-control-next {
   margin: 0;
   background-color: transparent;
   filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
@@ -288,6 +291,9 @@ footer a img {
 
 
 /*?----------------------Pagina Productos------------------*/
+.carousel_productos_page {
+  max-height: calc(100vh - 100px);
+}
 
 .parrafo-productos-page {
   background-color: rgba(152, 21, 21, 0.696);
@@ -299,11 +305,12 @@ footer a img {
   padding: 5px;
 }
 
-.carousel-item h5,p {
+.carousel-item h5,
+p {
   color: black;
 }
 
-.productos .carousel-control-prev {
+.carousel .carousel-control-prev {
   margin: 0;
   background-color: transparent;
   filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
@@ -323,7 +330,7 @@ body {
 .container {
   max-width: 700px;
   margin: 20px auto;
-  background: rgb(140, 179, 205);
+  background: rgb(0, 0, 0);
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -331,7 +338,7 @@ body {
 
 h2 {
   text-align: center;
-  color: #333;
+  color: #717070;
 }
 
 form {
@@ -341,7 +348,7 @@ form {
 label {
   display: block;
   margin-top: 15px;
-  color: #555;
+  color: #717070;
 }
 
 input,
@@ -359,8 +366,8 @@ textarea {
 
 button {
   margin-top: 20px;
-  background-color: #007bff;
-  color: white;
+  background-color: #717070;
+  color: rgb(255, 254, 251);
   border: none;
   padding: 12px 20px;
   border-radius: 5px;
@@ -369,7 +376,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: rgb(130, 43, 43);
 }
 
 .contact-info {
@@ -380,10 +387,11 @@ button:hover {
 .contact-info p {
   margin: 10px 0;
   font-size: 16px;
+  color: rgb(130, 43, 43);
 }
 
 .contact-info a {
-  color: #007bff;
+  color: #717070;
   text-decoration: none;
 }
 
@@ -391,6 +399,83 @@ button:hover {
   text-decoration: underline;
 }
 
+/*?----------------------Pagina Comprar------------------*/
+
+.carrito-section-page {
+  background-color: rgb(77, 75, 75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+}
+
+.contenido {
+  max-width: 1000px;
+  text-align: center;
+}
+
+.contenido h2 {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.tienda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.producto {
+  background: rgb(0, 0, 0);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.producto button {
+  background-color: rgb(130, 43, 43);
+  margin-top: 10px;
+  padding: 8px 15px;
+}
+
+.producto h3 {
+  font-size: 18px;
+  color: white;
+}
+
+.producto p {
+  margin: 5px 0;
+  color: white;
+}
+
+.carrito {
+  padding: 20px;
+  border: 2px dashed #333;
+  background: #000000;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.carrito h3 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.lista-carrito {
+  color: white;
+}
+
+.carrito p {
+  color: white;
+}
 
 /*!----------------------Media Qwery------------------*/
 
