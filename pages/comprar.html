@@ -76,7 +76,7 @@
                 function agregarAlCarrito(index) {
                     const producto = productos[index];
                     const li = document.createElement('li');
-                    li.innerHTML = `${producto.nombre} - $${producto.precio.toFixed(2)} <span class="eliminar" onclick="eliminarDelCarrito(this, ${producto.precio})">[Quitar]</span>`;
+                    li.innerHTML = `${producto.nombre} - $${producto.precio.toFixed(2)} <span class="eliminar" onclick="eliminarDelCarrito(this, ${producto.precio})">Quitar</span>`;
                     listaCarrito.appendChild(li);
                     total += producto.precio;
                     totalSpan.textContent = total.toFixed(2);
