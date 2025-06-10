@@ -8,7 +8,7 @@
 
 /*?------------------------body-----------------------*/
 body {
-  background-color: rgb(187, 187, 187);
+  background-color: #717070;
   font-family: "Tagesschrift", system-ui !important;
 }
 
@@ -206,7 +206,6 @@ nav ul li a:hover {
 /**----Quinta Seccion----*/
 
 .productos {
-  height: 320px;
   background-color: rgb(77, 75, 75);
 }
 
@@ -241,9 +240,9 @@ nav ul li a:hover {
 
 .card-contenedor div:hover {
   transform: scale(1.2);
-  box-shadow: 10px 9px 20px -6px rgba(0,0,0,0.75);
- -webkit-box-shadow: 10px 9px 20px -6px rgba(0,0,0,0.75);
- -moz-box-shadow: 10px 9px 20px -6px rgba(0,0,0,0.75);
+  box-shadow: 10px 9px 20px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 9px 20px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 9px 20px -6px rgba(0, 0, 0, 0.75);
 }
 
 .card-contenedor img {
@@ -311,6 +310,17 @@ footer a img {
 
 /*?----------------------Pagina Productos------------------*/
 
+/* .page_productos {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page_productos main {
+  flex: 1;
+} */
+
 .parrafo-productos-page {
   background-color: rgba(152, 21, 21, 0.696);
   text-align: center;
@@ -342,10 +352,14 @@ p {
   filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
 }
 
-/*?----------------------Pagina Contacto------------------*/
-body {
-  background-color: #717070;
+.descripcion p {
+  background-color: rgba(152, 21, 21, 0.696);
+  text-align: center;
+  margin: 0;
+  padding: 15px;
 }
+
+/*?----------------------Pagina Contacto------------------*/
 
 .container {
   max-width: 700px;
@@ -518,12 +532,17 @@ button:hover {
   .nosotros-img {
     flex-wrap: wrap;
   }
+
+  .nosotros-img div img {
+    padding-bottom: 10px;
+  }
 }
 
 @media screen and (max-width:990px) {
   .hero p {
     text-align: center;
   }
+
 }
 
 @media screen and (max-width:877px) {
@@ -571,19 +590,17 @@ button:hover {
 }
 
 @media screen and (max-width:500px) {
-  .nosotros-img .img-two {
-    width: 300px;
-    height: 100px;
-  }
-}
-
-@media screen and (max-width:500px) {
   header {
     justify-content: flex-start;
   }
 
   .header-logo {
     flex-direction: row-reverse;
+  }
+
+  .nosotros-img .img-two {
+    width: 300px;
+    height: 100px;
   }
 
   .carousel-item img {
