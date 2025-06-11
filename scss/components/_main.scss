@@ -3,10 +3,8 @@
 /**----Primer Sección-----*/
 
 .hero {
-    display: flex;
+    @include flex-container(flex, center, center);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: calc(100vh - 60px);
     /* total - nav */
     position: relative;
@@ -23,9 +21,9 @@
 
 .hero-content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 5rem;
 }
 
@@ -136,6 +134,8 @@
 /**----Quinta Seccion----*/
 
 .productos {
+    min-height: 50vh;
+    padding-bottom: 20px;
     background-color: rgb(77, 75, 75);
 }
 

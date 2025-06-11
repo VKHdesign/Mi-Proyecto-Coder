@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap");
+nav ul li a {
+  text-decoration: none;
+  color: rgb(130, 43, 43) !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,8 +41,8 @@ header {
 }
 
 .logo {
-  color: rgb(130, 43, 43);
-  font-size: 35px;
+  color: rgb(130, 43, 43) !important;
+  font-size: 35px !important;
   display: inline;
   text-align: left;
 }
@@ -57,11 +62,6 @@ nav ul li {
   margin: 7px;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: rgb(130, 43, 43) !important;
-}
-
 nav ul li a:hover {
   color: rgb(77, 75, 75);
   transition: 0.6s;
@@ -71,9 +71,9 @@ nav ul li a:hover {
 /**----Primer Sección-----*/
 .hero {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: calc(100vh - 60px);
   /* total - nav */
   position: relative;
@@ -90,9 +90,9 @@ nav ul li a:hover {
 
 .hero-content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 5rem;
 }
 
@@ -198,6 +198,8 @@ nav ul li a:hover {
 
 /**----Quinta Seccion----*/
 .productos {
+  min-height: 50vh;
+  padding-bottom: 20px;
   background-color: rgb(77, 75, 75);
 }
 

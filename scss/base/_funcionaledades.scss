@@ -7,16 +7,20 @@ $color-alternativo: white;
 
 //* Listas
 
-$font-size:
-12px
-14px
-15px
-16px
-18px
-24px
-30px
-35px
-40px
-48px
+$font-size: 12px 14px 15px 16px 18px 24px 30px 35px 40px 48px;
 
-//*
+//* Extend
+
+%enlaces {
+    text-decoration: none;
+    color: $color-secundario !important;
+}
+
+
+//* mixin
+
+@mixin flex-container($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

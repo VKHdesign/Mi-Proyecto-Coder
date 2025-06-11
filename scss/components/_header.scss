@@ -22,8 +22,8 @@ header {
 }
 
 .logo {
-    color: $color-secundario;
-    font-size: nth($font-size, 8);
+    color: $color-secundario !important;
+    font-size: nth($font-size, 8) !important;
     display: inline;
     text-align: left;
 }
@@ -44,8 +44,7 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: $color-secundario !important;
+    @extend %enlaces;
 }
 
 nav ul li a:hover {
