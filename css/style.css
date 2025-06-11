@@ -206,6 +206,7 @@ nav ul li a:hover {
 /**----Quinta Seccion----*/
 
 .productos {
+  padding-bottom: 20px;
   background-color: rgb(77, 75, 75);
 }
 
