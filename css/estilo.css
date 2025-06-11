@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: black;
+  background-color: black !important;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -59,7 +59,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(130, 43, 43);
+  color: rgb(130, 43, 43) !important;
 }
 
 nav ul li a:hover {

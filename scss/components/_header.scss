@@ -1,5 +1,5 @@
 header {
-    background-color: black;
+    background-color: $color-primario !important;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@ header {
 }
 
 .logo {
-    color: rgb(130, 43, 43);
+    color: $color-secundario;
     font-size: 40px;
     display: inline;
     text-align: left;
@@ -45,7 +45,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(130, 43, 43);
+    color: $color-secundario !important;
 }
 
 nav ul li a:hover {
