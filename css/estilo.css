@@ -1,4 +1,18 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*?------------------------body-----------------------*/
+body {
+  background-color: #717070;
+  font-family: "Tagesschrift", system-ui !important;
+}
+
 header {
   background-color: black;
   height: 60px;
@@ -6,44 +20,56 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.3rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-header div {
+
+.header-logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header div img {
+
+.logo-img {
   height: 60px;
   width: 70px;
 }
-header div div {
+
+.logo {
   color: rgb(130, 43, 43);
   font-size: 40px;
   display: inline;
   text-align: left;
 }
-header div div::first-letter {
-  color: rgb(130, 43, 43);
+
+.logo::first-letter {
+  color: rgb(77, 75, 75);
 }
-header nav ul {
+
+nav ul {
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
 }
-header nav ul li {
+
+nav ul li {
   display: inline;
   margin: 7px;
 }
-header nav ul li a {
+
+nav ul li a {
   text-decoration: none;
   color: rgb(130, 43, 43);
 }
-header nav ul li a:hover {
-  color: rgb(53, 209, 160);
-  transition: 0.8s;
+
+nav ul li a:hover {
+  color: rgb(77, 75, 75);
+  transition: 0.6s;
 }
 
-/*---------------primer sección-------------*/
+/*?-----------------------main----------------------*/
+/**----Primer Sección-----*/
 .hero {
   display: flex;
   flex-direction: column;
@@ -53,6 +79,7 @@ header nav ul li a:hover {
   /* total - nav */
   position: relative;
 }
+
 .hero video {
   position: absolute;
   inset: 0;
@@ -61,37 +88,58 @@ header nav ul li a:hover {
   z-index: -1;
   object-fit: cover;
 }
-.hero div {
+
+.hero-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5rem;
 }
-.hero div h1 {
+
+.hero .hero-content h1 {
   color: rgba(255, 255, 255, 0.696);
   display: block;
   background-color: rgba(0, 0, 0, 0.374);
   padding: 0.2rem;
   margin: 0;
 }
-.hero div p {
+
+.hero .hero-content p {
   color: rgba(255, 255, 255, 0.696);
   background-color: rgba(0, 0, 0, 0.374);
   padding: 5px;
   margin: 0;
 }
-.hero div a {
+
+.hero .hero-content a {
   color: rgba(255, 255, 255, 0.696);
 }
 
-/*-------------Segunda Sección------------*/
+.hero .hero-content a:hover {
+  color: black;
+  transition: 0.6s;
+  background-color: rgb(130, 43, 43);
+  border-radius: 10px;
+  padding: 0px 8px 0px 8px;
+}
+
+/**----Segunda Sección----*/
+.historia {
+  height: 40vh;
+  background-color: rgb(21, 15, 15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .historia h2 {
   color: whitesmoke;
   text-align: center;
   text-decoration: underline;
   margin: 0;
 }
+
 .historia p {
   color: whitesmoke;
   text-align: center;
@@ -99,7 +147,7 @@ header nav ul li a:hover {
   margin: 0;
 }
 
-/*------------Tercer Sección------------*/
+/**----Tercer Sección grid----*/
 .grid-section {
   background-color: rgb(77, 75, 75);
   display: grid;
@@ -108,30 +156,58 @@ header nav ul li a:hover {
   gap: 5px;
   padding: 5px;
 }
-.grid-section div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.grid-section .img-2 {
-  grid-column: span 2;
-}
-.grid-section .img-4 {
-  grid-row: span 2;
-}
-.grid-section .img-5 {
-  grid-column: span 2;
-}
-.grid-section .img-6 {
-  grid-row: span 2;
-}
-.grid-section .grid-items {
+
+.grid-item {
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-/*------------Quinta Sección------------*/
+.grid-section div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-2 {
+  grid-column: span 2;
+}
+
+.img-4 {
+  grid-row: span 2;
+}
+
+.img-5 {
+  grid-column: span 2;
+}
+
+.img-6 {
+  grid-row: span 2;
+}
+
+/**----Cuarta Seccion----*/
+.carousel-indexpage {
+  z-index: 0;
+}
+
+.carousel-indexpage .carousel-fade .carousel-control-prev,
+.carousel-control-next {
+  margin: 0;
+  background-color: transparent;
+  filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
+}
+
+/**----Quinta Seccion----*/
+.productos {
+  background-color: rgb(77, 75, 75);
+}
+
+.productos .card-contenedor {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
 .productos h2 {
   color: white;
   display: flex;
@@ -142,12 +218,8 @@ header nav ul li a:hover {
   padding: 5px;
   text-decoration: underline;
 }
-.productos .card-contenedor {
-  background-color: rgb(77, 75, 75);
-  display: flex;
-  justify-content: space-evenly;
-}
-.productos .card-contenedor div {
+
+.card-contenedor div {
   width: 150px;
   height: 220px;
   background-color: #000000;
@@ -155,24 +227,40 @@ header nav ul li a:hover {
   padding: 3px;
   margin: 10px;
   text-align: center;
+  transition: 0.5s;
+  border-radius: 5px;
 }
-.productos .card-contenedor div img {
+
+.card-contenedor div:hover {
+  transform: scale(1.2);
+  box-shadow: 10px 9px 20px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 9px 20px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 9px 20px -6px rgba(0, 0, 0, 0.75);
+}
+
+.card-contenedor img {
   width: 100%;
   height: 150px;
 }
-.productos .card-contenedor div h3 {
+
+.card-contenedor h3 {
   color: rgb(255, 255, 255);
   text-align: center;
   padding-top: 6px;
   font-size: 20px;
   margin: 0;
 }
-.productos .card-contenedor div a {
-  color: rgb(53, 209, 160);
+
+.card-contenedor a {
+  color: white;
   text-align: center;
 }
 
-/*------------Footer------------*/
+.card-contenedor a:hover {
+  color: rgb(130, 43, 43);
+}
+
+/*?----------------------footer----------------------*/
 footer {
   background-color: black;
   height: 40px;
@@ -181,11 +269,12 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 }
+
 footer a img {
   height: 20px;
 }
 
-/*------------Pagina Nosotros------------*/
+/*?----------------------Pagina Nosotros------------------*/
 .nosotros {
   display: flex;
   background-image: url(../img/page-nosotros/pngtree-vintage-black-brick-wall-a-background-perfect-for-3d-rendering-and-picture-image_5575471.jpg);
@@ -195,29 +284,231 @@ footer a img {
   justify-content: space-evenly;
   flex-direction: column;
 }
+
 .nosotros p {
   color: white;
   text-align: center;
   padding: 10px;
 }
-.nosotros .nosotros-img {
+
+.nosotros-img {
   display: flex;
   justify-content: space-evenly;
   margin: 3px;
 }
 
-/*------------Pagina Productos------------*/
-.productos .parrafo-productos-page {
+/*?----------------------Pagina Productos------------------*/
+/* .page_productos {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page_productos main {
+  flex: 1;
+} */
+.parrafo-productos-page {
   background-color: rgba(152, 21, 21, 0.696);
   text-align: center;
 }
-.productos .parrafo-productos-page p {
+
+.parrafo-productos-page p {
   margin: 0;
   padding: 5px;
 }
-.productos .carousel-item h5,
-.productos .carousel-item p {
+
+.slide .carousel-indicators button {
+  filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
+}
+
+.carousel-item h5,
+p {
   color: black;
+}
+
+.carousel .carousel-control-prev {
+  margin: 0;
+  background-color: transparent;
+  filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
+}
+
+.carousel .carousel-control-next {
+  margin: 0;
+  background-color: transparent;
+  filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
+}
+
+.descripcion p {
+  background-color: rgba(152, 21, 21, 0.696);
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+}
+
+/*?----------------------Pagina Contacto------------------*/
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  background: rgb(0, 0, 0);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #717070;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  color: #717070;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #717070;
+  color: rgb(255, 254, 251);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(130, 43, 43);
+}
+
+.contact-info {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: rgb(130, 43, 43);
+}
+
+.contact-info a {
+  color: #717070;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/*?----------------------Pagina Comprar------------------*/
+.carrito-section-page {
+  background-color: rgb(77, 75, 75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+}
+
+.contenido {
+  max-width: 1000px;
+  text-align: center;
+}
+
+.contenido h2 {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.tienda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.producto {
+  background: rgb(0, 0, 0);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.producto button {
+  background-color: rgb(130, 43, 43);
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.producto h3 {
+  font-size: 18px;
+  color: white;
+}
+
+.producto p {
+  margin: 5px 0;
+  color: white;
+}
+
+.carrito {
+  padding: 20px;
+  border: 2px dashed #333;
+  background: #000000;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.eliminar {
+  background-color: rgb(130, 43, 43);
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 0 3px;
+  cursor: pointer;
+}
+
+.carrito h3 {
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+.lista-carrito {
+  color: white;
+}
+
+.lista-carrito li {
+  padding-bottom: 3px;
+}
+
+.carrito p {
+  color: white;
+  text-align: center;
+  padding-top: 5px;
 }
 
 /*# sourceMappingURL=estilo.css.map */

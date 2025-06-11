@@ -1,0 +1,54 @@
+header {
+    background-color: black;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px;
+    width: 70px;
+}
+
+.logo {
+    color: rgb(130, 43, 43);
+    font-size: 40px;
+    display: inline;
+    text-align: left;
+}
+
+.logo::first-letter {
+    color: rgb(77, 75, 75);
+}
+
+nav ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 7px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(130, 43, 43);
+}
+
+nav ul li a:hover {
+    color: rgb(77, 75, 75);
+    transition: 0.6s;
+}

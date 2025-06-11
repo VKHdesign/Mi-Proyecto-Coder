@@ -1,0 +1,50 @@
+/*?----------------------Pagina Productos------------------*/
+
+/* .page_productos {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page_productos main {
+  flex: 1;
+} */
+
+.parrafo-productos-page {
+    background-color: rgba(152, 21, 21, 0.696);
+    text-align: center;
+}
+
+.parrafo-productos-page p {
+    margin: 0;
+    padding: 5px;
+}
+
+.slide .carousel-indicators button {
+    filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
+}
+
+.carousel-item h5,
+p {
+    color: black;
+}
+
+.carousel .carousel-control-prev {
+    margin: 0;
+    background-color: transparent;
+    filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
+}
+
+.carousel .carousel-control-next {
+    margin: 0;
+    background-color: transparent;
+    filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
+}
+
+.descripcion p {
+    background-color: rgba(152, 21, 21, 0.696);
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}

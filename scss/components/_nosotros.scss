@@ -1,0 +1,23 @@
+/*?----------------------Pagina Nosotros------------------*/
+
+.nosotros {
+    display: flex;
+    background-image: url(../img/page-nosotros/pngtree-vintage-black-brick-wall-a-background-perfect-for-3d-rendering-and-picture-image_5575471.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 100px);
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.nosotros p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.nosotros-img {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3px;
+}
