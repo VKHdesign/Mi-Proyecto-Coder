@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -509,6 +508,98 @@ button:hover {
   color: white;
   text-align: center;
   padding-top: 5px;
+}
+
+/*!----------------------Media Qwery------------------*/
+@media screen and (max-width: 1120px) {
+  .nosotros-img {
+    flex-wrap: wrap;
+  }
+  .nosotros-img div img {
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .hero p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 877px) {
+  .historia p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 752px) {
+  header {
+    flex-direction: column;
+    height: 90px;
+  }
+}
+@media screen and (max-width: 735px) {
+  .card-contenedor h3 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 635px) {
+  .historia {
+    height: 53vh;
+  }
+  header {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 558px) {
+  .hero h1 {
+    text-align: center;
+    font-size: 22px;
+  }
+  .productos .card-contenedor {
+    flex-wrap: wrap;
+  }
+  .historia {
+    height: 58vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    justify-content: flex-start;
+  }
+  .header-logo {
+    flex-direction: row-reverse;
+  }
+  .nosotros-img .img-two {
+    width: 300px;
+    height: 100px;
+  }
+  .carousel-item img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 474px) {
+  .historia {
+    height: 66vh;
+  }
+}
+@media screen and (max-width: 420px) {
+  .historia {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 403px) {
+  nav ul li a {
+    font-size: 13px;
+  }
+  .logo {
+    font-size: 35px;
+  }
+  .hero-content p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 364px) {
+  .historia {
+    height: 74vh;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
