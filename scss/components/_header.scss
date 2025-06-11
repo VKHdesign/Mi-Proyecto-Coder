@@ -23,7 +23,7 @@ header {
 
 .logo {
     color: $color-secundario;
-    font-size: 40px;
+    font-size: nth($font-size, 8);
     display: inline;
     text-align: left;
 }
