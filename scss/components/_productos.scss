@@ -30,6 +30,30 @@ p {
     color: black;
 }
 
+.d-none a  {
+    text-decoration: none;
+    color: rgb(156, 156, 156);
+    font-weight: 100;
+    padding: 1px 15px;
+    background-color: rgb(130, 43, 43);
+    border-radius: 5px;
+    margin: 0 10px;
+    
+}
+
+// .d-none a:hover {
+//     transition: 0.6s;
+//     transform: scale(1.2);
+// }
+
+.carousel-indicators {
+    margin: 0;
+}
+
+.carousel-indicators button {
+    margin: 0;
+}
+
 .carousel .carousel-control-prev {
     margin: 0;
     background-color: transparent;

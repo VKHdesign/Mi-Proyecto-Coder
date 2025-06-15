@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tagesschrift&display=swap');
+
 
 * {
   margin: 0;
@@ -9,5 +11,6 @@
 /*?------------------------body-----------------------*/
 body {
   background-color: #717070;
-  font-family: "Tagesschrift", system-ui !important;
+  // font-family: "Tagesschrift", system-ui !important;
+  font-family: "Edu SA Hand", cursive !important;
 }

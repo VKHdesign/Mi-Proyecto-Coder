@@ -1,6 +1,6 @@
-/*?-----------------------main----------------------*/
+//?-----------------------main----------------------*/
 
-/**----Primer Sección-----*/
+//*----Primer Sección-----*/
 
 .hero {
     @include flex-container(flex, center, center);
@@ -55,7 +55,7 @@
 }
 
 
-/**----Segunda Sección----*/
+//*----Segunda Sección----*/
 
 .historia {
     height: 40vh;
@@ -79,7 +79,7 @@
     margin: 0;
 }
 
-/**----Tercer Sección grid----*/
+//*----Tercer Sección grid----*/
 
 .grid-section {
     background-color: rgb(77, 75, 75);
@@ -119,19 +119,20 @@
 }
 
 
-/**----Cuarta Seccion----*/
-.carousel-indexpage {
-    z-index: 0;
-}
+//*----Cuarta Seccion----*/
 
-.carousel-indexpage .carousel-fade .carousel-control-prev,
-.carousel-control-next {
-    margin: 0;
-    background-color: transparent;
-    filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
-}
+// .carousel-indexpage {
+//     z-index: 0;
+// }
 
-/**----Quinta Seccion----*/
+// .carousel-indexpage .carousel-fade .carousel-control-prev,
+// .carousel-control-next {
+//     margin: 0;
+//     background-color: transparent;
+//     filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
+// }
+
+//*----Quinta Seccion----*/
 
 .productos {
     min-height: 50vh;

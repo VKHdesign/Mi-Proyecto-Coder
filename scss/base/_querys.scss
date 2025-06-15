@@ -23,6 +23,12 @@
     }
 }
 
+@media screen and (max-width:768px) {
+   .d-none {
+    display: block !important;
+   }
+}
+
 @media screen and (max-width:752px) {
     header {
         flex-direction: column;

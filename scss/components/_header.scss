@@ -24,8 +24,10 @@ header {
 .logo {
     color: $color-secundario !important;
     font-size: nth($font-size, 8) !important;
+    font-family: "Tagesschrift", system-ui !important;
     display: inline;
     text-align: left;
+
 }
 
 .logo::first-letter {
@@ -48,6 +50,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(77, 75, 75);
+    color: rgb(156, 156, 156);
     transition: 0.6s;
 }
+
+

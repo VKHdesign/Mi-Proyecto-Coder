@@ -1,8 +1,8 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tagesschrift&display=swap");
 nav ul li a {
   text-decoration: none;
-  color: rgb(130, 43, 43) !important;
+  font-weight: 200;
+  color: rgb(130, 43, 43);
 }
 
 * {
@@ -14,7 +14,7 @@ nav ul li a {
 /*?------------------------body-----------------------*/
 body {
   background-color: #717070;
-  font-family: "Tagesschrift", system-ui !important;
+  font-family: "Edu SA Hand", cursive !important;
 }
 
 header {
@@ -43,6 +43,7 @@ header {
 .logo {
   color: rgb(130, 43, 43) !important;
   font-size: 35px !important;
+  font-family: "Tagesschrift", system-ui !important;
   display: inline;
   text-align: left;
 }
@@ -63,12 +64,10 @@ nav ul li {
 }
 
 nav ul li a:hover {
-  color: rgb(77, 75, 75);
+  color: rgb(156, 156, 156);
   transition: 0.6s;
 }
 
-/*?-----------------------main----------------------*/
-/**----Primer Sección-----*/
 .hero {
   display: flex;
   justify-content: center;
@@ -123,7 +122,6 @@ nav ul li a:hover {
   padding: 0px 8px 0px 8px;
 }
 
-/**----Segunda Sección----*/
 .historia {
   height: 40vh;
   background-color: rgb(21, 15, 15);
@@ -146,7 +144,6 @@ nav ul li a:hover {
   margin: 0;
 }
 
-/**----Tercer Sección grid----*/
 .grid-section {
   background-color: rgb(77, 75, 75);
   display: grid;
@@ -184,19 +181,6 @@ nav ul li a:hover {
   grid-row: span 2;
 }
 
-/**----Cuarta Seccion----*/
-.carousel-indexpage {
-  z-index: 0;
-}
-
-.carousel-indexpage .carousel-fade .carousel-control-prev,
-.carousel-control-next {
-  margin: 0;
-  background-color: transparent;
-  filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
-}
-
-/**----Quinta Seccion----*/
 .productos {
   min-height: 50vh;
   padding-bottom: 20px;
@@ -326,6 +310,24 @@ footer a img {
 .carousel-item h5,
 p {
   color: black;
+}
+
+.d-none a {
+  text-decoration: none;
+  color: rgb(156, 156, 156);
+  font-weight: 100;
+  padding: 1px 15px;
+  background-color: rgb(130, 43, 43);
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.carousel-indicators {
+  margin: 0;
+}
+
+.carousel-indicators button {
+  margin: 0;
 }
 
 .carousel .carousel-control-prev {
@@ -529,6 +531,11 @@ button:hover {
 @media screen and (max-width: 877px) {
   .historia p {
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .d-none {
+    display: block !important;
   }
 }
 @media screen and (max-width: 752px) {
