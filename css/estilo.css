@@ -552,6 +552,14 @@ button:hover {
     font-size: 13px;
   }
 }
+@media screen and (max-width: 780px) {
+  .card-contenedor h3 {
+    font-size: 15px;
+  }
+  .card-contenedor a {
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 768px) {
   .d-none {
     display: block !important;
@@ -565,7 +573,7 @@ button:hover {
 }
 @media screen and (max-width: 735px) {
   .card-contenedor h3 {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 635px) {
@@ -620,11 +628,11 @@ button:hover {
   .historia {
     height: 70vh;
   }
-}
-@media screen and (max-width: 403px) {
   nav ul li a {
     font-size: 13px;
   }
+}
+@media screen and (max-width: 403px) {
   .logo {
     font-size: 35px;
   }
@@ -637,7 +645,9 @@ button:hover {
     height: 74vh;
   }
   nav ul li a {
-    font-weight: 100;
+    font-weight: 300;
+    font-size: 11px;
+    margin: 0;
   }
 }
 
