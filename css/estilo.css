@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tagesschrift&display=swap");
 nav ul li a {
   text-decoration: none;
-  font-weight: 200;
+  font-weight: 500;
   color: rgb(130, 43, 43);
 }
 
@@ -14,6 +15,7 @@ nav ul li a {
 /*?------------------------body-----------------------*/
 body {
   background-color: #717070;
+  font-family: "Tagesschrift", system-ui;
   font-family: "Edu SA Hand", cursive !important;
 }
 
@@ -135,12 +137,14 @@ nav ul li a:hover {
   text-align: center;
   text-decoration: underline;
   margin: 0;
+  font-weight: 700;
 }
 
 .historia p {
   color: whitesmoke;
   text-align: center;
   font-size: 15px;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -200,7 +204,7 @@ nav ul li a:hover {
   background-color: rgb(77, 75, 75);
   margin: 0;
   text-align: center;
-  padding: 5px;
+  padding: 10px 5px 5px 5px;
   text-decoration: underline;
 }
 
@@ -217,7 +221,7 @@ nav ul li a:hover {
 }
 
 .card-contenedor div:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: 10px 9px 20px -6px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 9px 20px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 9px 20px -6px rgba(0, 0, 0, 0.75);
@@ -326,7 +330,6 @@ footer a img {
   display: inline;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-weight: 100;
   padding: 1px 15px;
   background-color: rgb(130, 43, 43);
   border-radius: 5px;
@@ -599,6 +602,14 @@ button:hover {
   .carousel-item img {
     height: 250px;
   }
+  .carousel-item h5 {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .d-none div a {
+    margin-right: 20px;
+    padding: 2px 5px;
+  }
 }
 @media screen and (max-width: 474px) {
   .historia {
@@ -624,6 +635,9 @@ button:hover {
 @media screen and (max-width: 364px) {
   .historia {
     height: 74vh;
+  }
+  nav ul li a {
+    font-weight: 100;
   }
 }
 

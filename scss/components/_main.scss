@@ -70,12 +70,14 @@
     text-align: center;
     text-decoration: underline;
     margin: 0;
+    font-weight: nth($font-weight,6);
 }
 
 .historia p {
     color: whitesmoke;
     text-align: center;
     font-size: nth($font-size,3);
+    font-weight: nth($font-weight,2);
     margin: 0;
 }
 
@@ -153,7 +155,8 @@
     background-color: rgb(77, 75, 75);
     margin: 0;
     text-align: center;
-    padding: 5px;
+    padding: 10px 5px 5px 5px;
+
     text-decoration: underline;
 }
 
@@ -170,7 +173,7 @@
 }
 
 .card-contenedor div:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 10px 9px 20px -6px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 9px 20px -6px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 9px 20px -6px rgba(0, 0, 0, 0.75);
