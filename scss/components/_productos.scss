@@ -19,38 +19,47 @@
 .parrafo-productos-page p {
     margin: 0;
     padding: 5px;
+    font-weight: 700;
 }
 
 .slide .carousel-indicators button {
     filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg);
 }
 
-.carousel-item h5,
-p {
+.carousel-item h5 {
     color: black;
+    margin-bottom: 15px;
 }
 
-.d-none a  {
+.carousel-caption {
+    text-align: right;
+}
+
+.d-none div {
+    display: inline-block;
+    transition: 0.6s;
+}
+
+.d-none div a  {
+    display: inline;
     text-decoration: none;
-    color: rgb(156, 156, 156);
+    color: rgb(255, 255, 255);
     font-weight: 100;
     padding: 1px 15px;
     background-color: rgb(130, 43, 43);
     border-radius: 5px;
-    margin: 0 10px;
-    
+    margin-right: 40px;
 }
 
-// .d-none a:hover {
-//     transition: 0.6s;
-//     transform: scale(1.2);
-// }
+.d-none a:hover {
+    color: black;
+}
+
+.d-none div:hover {
+    transform: scale(1.1);
+}
 
 .carousel-indicators {
-    margin: 0;
-}
-
-.carousel-indicators button {
     margin: 0;
 }
 
@@ -71,4 +80,5 @@ p {
     text-align: center;
     margin: 0;
     padding: 15px;
+    font-weight: 700;
 }
