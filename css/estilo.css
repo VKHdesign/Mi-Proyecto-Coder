@@ -125,18 +125,17 @@ nav ul li a:hover {
 }
 
 .historia {
-  height: 40vh;
   background-color: rgb(21, 15, 15);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 
 .historia h2 {
-  color: whitesmoke;
+  color: rgb(130, 43, 43);
   text-align: center;
   text-decoration: underline;
   margin: 0;
+  padding: 10px 0 5px 0;
   font-weight: 700;
 }
 
@@ -146,6 +145,7 @@ nav ul li a:hover {
   font-size: 15px;
   font-weight: 300;
   margin: 0;
+  padding-bottom: 10px;
 }
 
 .grid-section {
@@ -198,14 +198,15 @@ nav ul li a:hover {
 }
 
 .productos h2 {
-  color: white;
+  font-weight: 700;
+  color: black;
+  -webkit-text-stroke: 2px rgb(130, 43, 43);
   display: flex;
   justify-content: center;
   background-color: rgb(77, 75, 75);
   margin: 0;
   text-align: center;
   padding: 10px 5px 5px 5px;
-  text-decoration: underline;
 }
 
 .card-contenedor div {
@@ -577,9 +578,6 @@ button:hover {
   }
 }
 @media screen and (max-width: 635px) {
-  .historia {
-    height: 53vh;
-  }
   header {
     height: 100px;
   }
@@ -591,9 +589,6 @@ button:hover {
   }
   .productos .card-contenedor {
     flex-wrap: wrap;
-  }
-  .historia {
-    height: 58vh;
   }
 }
 @media screen and (max-width: 500px) {
@@ -619,15 +614,7 @@ button:hover {
     padding: 2px 5px;
   }
 }
-@media screen and (max-width: 474px) {
-  .historia {
-    height: 66vh;
-  }
-}
 @media screen and (max-width: 420px) {
-  .historia {
-    height: 70vh;
-  }
   nav ul li a {
     font-size: 13px;
   }

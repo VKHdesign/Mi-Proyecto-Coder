@@ -53,9 +53,9 @@
 }
 
 @media screen and (max-width:635px) {
-    .historia {
-        height: 53vh;
-    }
+    // .historia {
+    //     height: 53vh;
+    // }
 
     header {
         height: 100px;
@@ -72,9 +72,9 @@
         flex-wrap: wrap;
     }
 
-    .historia {
-        height: 58vh;
-    }
+    // .historia {
+    //     height: 58vh;
+    // }
 }
 
 @media screen and (max-width:500px) {
@@ -107,16 +107,16 @@
 
 }
 
-@media screen and (max-width:474px) {
-    .historia {
-        height: 66vh;
-    }
-}
+// @media screen and (max-width:474px) {
+//     .historia {
+//         height: 66vh;
+//     }
+// }
 
 @media screen and (max-width:420px) {
-    .historia {
-        height: 70vh;
-    }
+    // .historia {
+    //     height: 70vh;
+    // }
 
     nav ul li a {
         font-size: 13px;
