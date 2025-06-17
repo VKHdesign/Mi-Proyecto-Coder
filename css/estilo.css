@@ -628,9 +628,6 @@ button:hover {
   }
 }
 @media screen and (max-width: 364px) {
-  .historia {
-    height: 74vh;
-  }
   nav ul li a {
     font-weight: 300;
     font-size: 11px;
