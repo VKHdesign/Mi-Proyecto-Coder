@@ -1,5 +1,11 @@
 /*!----------------------Media Qwery------------------*/
 
+@media screen and (max-width:1200px) {
+    .logos img {
+        transform: scale(90%);
+    }
+}
+
 @media screen and (max-width:1120px) {
     .nosotros-img {
         flex-wrap: wrap;
@@ -7,6 +13,13 @@
 
     .nosotros-img div img {
         padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .logos-productos .logos {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -20,6 +33,10 @@
 @media screen and (max-width:877px) {
     .historia p {
         font-size: 13px;
+    }
+
+    .logos img {
+        transform: scale(70%);
     }
 }
 

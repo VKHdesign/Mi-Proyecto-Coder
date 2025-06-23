@@ -81,3 +81,15 @@
     padding: 15px;
     font-weight: nth($font-weight,6);
 }
+
+.logos-productos .logos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    align-items: center;
+    background-color: rgba(152, 21, 21, 0.696);
+}
+
+.logos img {
+    border-radius: 10px;
+}
