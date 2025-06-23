@@ -575,9 +575,6 @@ button:hover {
   .historia p {
     font-size: 13px;
   }
-  .logos img {
-    transform: scale(70%);
-  }
 }
 @media screen and (max-width: 780px) {
   .card-contenedor h3 {
